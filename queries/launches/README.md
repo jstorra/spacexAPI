@@ -1,4 +1,4 @@
-# Consulta para obtener todas las imagenes de las misiones
+# Consulta para obtener todas las imagenes de las launches
 
 **Method** : `GET`
 
@@ -6,9 +6,9 @@
 
 **URL** : `https://api.spacexdata.com/v3/launches`
 
-**Storage**   :  `v3.js`
+**Storage** : `v3.js`
 
-**Modulo** :  `getAllImgMis`
+**Modulo** : `getAllImgLaunches`
 
 **Auth required** : `False`
 
@@ -16,12 +16,12 @@
 
 **Code** : `200 OK`
 
-```json
-[    
-	{
-        img: 'https://images2.imgbox.com/40/e3/GypSkayF_o.png', 
-        img_small: 'https://images2.imgbox.com/3c/0e/T8iJcSN3_o.png'
-    },
-    ...
+```bash
+[
+  {
+    img: 'https://images2.imgbox.com/40/e3/GypSkayF_o.png',
+    img_small: 'https://images2.imgbox.com/3c/0e/T8iJcSN3_o.png'
+  },
+...
 ]
 ```

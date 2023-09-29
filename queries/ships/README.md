@@ -1,14 +1,14 @@
-# Consulta para obtener todas las imagenes los rockets
+# Consulta para obtener todas las imagenes los ships
 
 **Method** : `POST`
 
 **Version** : `v4`
 
-**URL** : `https://api.spacexdata.com/v4/rockets/query`
+**URL** : `https://api.spacexdata.com/v4/ships/query`
 
 **Storage** : `v4.js`
 
-**Modulo** : `getAllImgRockets`
+**Modulo** : `getAllImgShips`
 
 **Query** :
 
@@ -16,7 +16,7 @@
 {
   options: {
     select: {
-      flickr_images: 1;
+      image: 1;
     }
   }
 }
@@ -28,12 +28,12 @@
 
 **Code** : `200 OK`
 
-```bash
+```js
 [
   img: [
     "https://imgur.com/DaCfMsj.jpg",
-    "https://imgur.com/azYafd8.jpg"
-  ],
-...
+    "https://imgur.com/azYafd8.jpg",
+    ...
+  ]
 ]
 ```

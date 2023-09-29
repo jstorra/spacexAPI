@@ -1,4 +1,4 @@
-export const getAllImgMis = async () => {
+export const getAllImgLaunches = async () => {
   let res = await (
     await fetch("https://api.spacexdata.com/v3/launches")
   ).json();
