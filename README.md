@@ -1,4 +1,82 @@
-### Spacex-data
+# SpaceX Image Retrieval
+
+Este repositorio contiene un conjunto de funciones JavaScript para recuperar imágenes relacionadas con lanzamientos espaciales, cohetes, naves, núcleos de cohetes y cápsulas de SpaceX utilizando la API de SpaceX.
+
+## Contenido
+
+- [Instrucciones de Uso](#instrucciones-de-uso)
+- [Funciones Disponibles](#funciones-disponibles)
+- [Storage de consultas](#storage-de-consultas)
+- [Queries de consultas](#queries-de-consultas)
+- [Uso de queries SpaceX v4](#uso-queries-spacex-v4)
+- [Datos de consulta](#spacex-datos-de-consulta)
+
+## Instrucciones de Uso
+
+1. Clona este repositorio o descárgalo como archivo ZIP en tu computadora.
+
+   ```bash
+   git clone https://github.com/jstorra/spacexAPI.git
+   ```
+
+2. Asegúrate de tener un entorno de desarrollo JavaScript configurado.
+
+3. Importa las funciones que necesitas en tu proyecto en el archivo `main.js`:
+
+   ```js
+   // importaciones por defecto
+   import { getAllImgLaunches } from "./storage/v3.js";
+   import {
+     getAllImgRockets,
+     getAllImgShips,
+     getAllImgCores,
+     getAllImgCapsules,
+   } from "./storage/v4.js";
+   ```
+
+4. Utiliza las funciones según sea necesario para obtener las imágenes que deseas.
+
+   ```js
+   let res = await getAllImgCapsules();
+   console.log(res);
+   ```
+
+5. Abre el archivo `index.html` en tu navegador web, inspecciona y en la consola se reflejaran los resultados.
+
+## Funciones Disponibles
+
+`getAllImgLaunches`: Recupera imágenes relacionadas con lanzamientos espaciales de SpaceX.
+
+`getAllImgRockets`: Recupera imágenes de cohetes SpaceX.
+
+`getAllImgShips`: Recupera imágenes de naves SpaceX.
+
+`getAllImgCores`: Recupera imágenes de los patch de los launches en los que han estado los núcleos de cohetes SpaceX.
+
+`getAllImgCapsules`: Recupera imágenes de los patch de los launches en los que han estado las cápsulas SpaceX.
+
+## Storage de consultas
+
+Uso de diferentes versiones segun las consultas:
+
+- [V3](storage/v3.js)
+- [V4](storage/v4.js)
+
+## Queries de consultas
+
+- [Launches](queries/launches)
+- [Rockets](queries/rockets)
+- [Cores](queries/cores)
+- [Ships](queries/ships)
+- [Capsules](queries/capsules)
+
+## Uso queries SpaceX v4
+
+En el siguiente **README** se especificara a detalle el uso de las queries para la version 4 de la API de SpaceX.
+
+- [Queries Guide](queries/queries.md)
+
+## SpaceX: Datos de consulta
 
 [API V3](https://docs.spacexdata.com/)
 
@@ -60,16 +138,16 @@ https://docs.spacexdata.com/api/v3/launches/100/details
 
 Esta URL devolverá un objeto con la información adicional sobre la misión, incluida la descripción importante.
 
+- **Recursos**:
 
+  https://www.youtube.com/watch?v=VOd-IgDQuGw&ab_channel=divcode
 
+  https://www.youtube.com/watch?v=hYv6BM2fWd8&ab_channel=webdecoded
 
+  https://www.youtube.com/watch?v=z4PVKtHeQmY&ab_channel=Mr.WebDesigner
 
+  https://www.youtube.com/watch?v=00Ak_raFngc&ab_channel=AnimationCoding
 
-https://www.youtube.com/watch?v=VOd-IgDQuGw&ab_channel=divcode
+---
 
-https://www.youtube.com/watch?v=hYv6BM2fWd8&ab_channel=webdecoded
-
-
-https://www.youtube.com/watch?v=z4PVKtHeQmY&ab_channel=Mr.WebDesigner
-
-https://www.youtube.com/watch?v=00Ak_raFngc&ab_channel=AnimationCoding
+<p align="center">Developed by <a href="https://github.com/jstorra">@jstorra</a></p>

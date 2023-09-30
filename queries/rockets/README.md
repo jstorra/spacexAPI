@@ -1,4 +1,4 @@
-# Consulta para obtener todas las imagenes los rockets
+# Consulta para obtener todas las imagenes de los rockets
 
 **Method** : `POST`
 
@@ -28,12 +28,18 @@
 
 **Code** : `200 OK`
 
-```bash
+```json
 [
-  img: [
+  "img": [
     "https://imgur.com/DaCfMsj.jpg",
     "https://imgur.com/azYafd8.jpg"
   ],
 ...
 ]
 ```
+
+## Error Responses
+
+**Code** : `400 Bad Request`
+
+**Content** : Mongoose error is shown, with suggestions to fix the query.

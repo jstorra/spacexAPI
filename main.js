@@ -1,7 +1,10 @@
 import { getAllImgLaunches } from "./storage/v3.js";
-import { getAllImgRockets, getAllImgShips } from "./storage/v4.js";
+import {
+  getAllImgRockets,
+  getAllImgShips,
+  getAllImgCores,
+  getAllImgCapsules,
+} from "./storage/v4.js";
 
-
-let res = await getAllImgShips();
+let res = await getAllImgCapsules();
 console.log(res);
-

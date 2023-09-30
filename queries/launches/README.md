@@ -16,12 +16,18 @@
 
 **Code** : `200 OK`
 
-```bash
+```json
 [
   {
-    img: 'https://images2.imgbox.com/40/e3/GypSkayF_o.png',
-    img_small: 'https://images2.imgbox.com/3c/0e/T8iJcSN3_o.png'
+    "img": "https://images2.imgbox.com/40/e3/GypSkayF_o.png",
+    "img_small": "https://images2.imgbox.com/3c/0e/T8iJcSN3_o.png"
   },
 ...
 ]
 ```
+
+## Error Responses
+
+**Code** : `400 Bad Request`
+
+**Content** : Mongoose error is shown, with suggestions to fix the query.

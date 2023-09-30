@@ -1,4 +1,4 @@
-# Consulta para obtener todas las imagenes los ships
+# Consulta para obtener todas las imagenes de los ships
 
 **Method** : `POST`
 
@@ -28,12 +28,18 @@
 
 **Code** : `200 OK`
 
-```js
+```json
 [
-  img: [
-    "https://imgur.com/DaCfMsj.jpg",
-    "https://imgur.com/azYafd8.jpg",
+  "img": [
+    "https://i.imgur.com/woCxpkj.jpg",
+    "https://i.imgur.com/jmj8Sh2.jpg",
     ...
   ]
 ]
 ```
+
+## Error Responses
+
+**Code** : `400 Bad Request`
+
+**Content** : Mongoose error is shown, with suggestions to fix the query.
